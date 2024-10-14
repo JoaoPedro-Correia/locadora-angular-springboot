@@ -1,0 +1,18 @@
+<main class="main">
+  <div class="container">
+    <div class="sidebar" (mouseover)="expandSidebar()" (mouseleave)="collapseSidebar()">
+      <!-- <a routerLink="/">Atores</a> -->
+      <a href="#" (click)="showCrud('ator')">Classes</a>
+      <a href="#" (click)="showCrud('classe')">Classes</a>
+      <a href="#" (click)="showCrud('diretor')">Diretores</a>
+    </div>
+    
+    <div class="content">
+      <app-crud-ator *ngIf="selectedCrud === 'ator'"></app-crud-ator>
+      <app-crud-classe *ngIf="selectedCrud === 'classe'"></app-crud-classe>
+      <app-crud-diretor *ngIf="selectedCrud === 'diretor'"></app-crud-diretor>
+    </div>
+  </div>
+</main>
+
+<router-outlet/>
