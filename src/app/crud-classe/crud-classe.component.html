@@ -1,0 +1,21 @@
+<h2>Gerenciar Classes</h2>
+<form>
+  <label for="nome">Nome do Classe</label>
+  <input type="text" id="nome">
+  <button type="submit">Salvar</button>
+</form>
+
+<!-- Lista de Classees -->
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Ações</th>
+  </tr>
+  <tr *ngFor="let classe of classes">
+    <td>{{ classe.nome }}</td>
+    <td>
+      <button (click)="editarClasse(classe)">Editar</button>
+      <button (click)="excluirClasse(classe)">Excluir</button>
+    </td>
+  </tr>
+</table>
