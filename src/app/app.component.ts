@@ -3,12 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CrudAtorComponent } from './crud-ator/crud-ator.component';  // Importando o componente de Ator
 import { CrudClasseComponent } from './crud-classe/crud-classe.component';  // Importando o componente de Classe
-import { CrudDiretorComponent } from './crud-diretor/crud-diretor.component';  // Importando o componente de Diretor
+import { CrudDiretorComponent } from './crud-diretor/crud-diretor.component';
+import { NavbarComponent } from "./_component/navbar/navbar.component";  // Importando o componente de Diretor
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, CrudAtorComponent, CrudClasseComponent, CrudDiretorComponent], // Incluindo os componentes standalone aqui
+  imports: [RouterOutlet, CommonModule, CrudAtorComponent, CrudClasseComponent, CrudDiretorComponent, NavbarComponent], // Incluindo os componentes standalone aqui
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

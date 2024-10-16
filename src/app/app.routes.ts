@@ -4,7 +4,8 @@ import { CrudClasseComponent } from './crud-classe/crud-classe.component';
 import { CrudDiretorComponent } from './crud-diretor/crud-diretor.component';
 
 export const routes: Routes = [
-    {path: 'ator', component: CrudAtorComponent},
+    {path: '', component: CrudAtorComponent},
     {path: 'classe', component: CrudClasseComponent},
-    {path: 'diretor', component: CrudDiretorComponent}
+    {path: 'diretor', component: CrudDiretorComponent},
+    {path: '**', component: CrudAtorComponent}
 ];
